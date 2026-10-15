@@ -1,0 +1,13 @@
+/data/tracking/10503.parquet filter=lfs diff=lfs merge=lfs -text
+/data/tracking/10506.parquet filter=lfs diff=lfs merge=lfs -text
+/data/tracking/10507.parquet filter=lfs diff=lfs merge=lfs -text
+/data/tracking/10508.parquet filter=lfs diff=lfs merge=lfs -text
+/data/tracking/10511.parquet filter=lfs diff=lfs merge=lfs -text
+/data/tracking/10517.parquet filter=lfs diff=lfs merge=lfs -text
+/data/tracking/3812.parquet filter=lfs diff=lfs merge=lfs -text
+/data/tracking/3819.parquet filter=lfs diff=lfs merge=lfs -text
+/data/tracking/3827.parquet filter=lfs diff=lfs merge=lfs -text
+/data/tracking/3834.parquet filter=lfs diff=lfs merge=lfs -text
+/data/tracking/3848.parquet filter=lfs diff=lfs merge=lfs -text
+/data/tracking/3851.parquet filter=lfs diff=lfs merge=lfs -text
+*.parquet filter=lfs diff=lfs merge=lfs -text

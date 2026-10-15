@@ -39,7 +39,7 @@ df["frame_id"] = df.groupby(["gameEventId", "possessionEventId", "eventTime"], d
 df_events = df.drop_duplicates("frame_id").set_index("frame_id")
 
 # Pass end = ball position at the next (strictly later) event; the data has no end coordinates
-df_ball_xy = df[df["tracking.team"] == "ball"].set_index("frame_id")[["tracking.x", "tracking.y"]]
+df_ball_xy = df[df["tracking.team"] == "ball"].drop_duplicates("frame_id").set_index("frame_id")[["tracking.x", "tracking.y"]]
 df_events_by_time = df_events.sort_values("eventTime")
 nxt = df_events_by_time["eventTime"].searchsorted(df_events["eventTime"], side="right")
 next_frame = pd.Series(df_events_by_time.index.append(pd.Index([-1]))[nxt], index=df_events.index)
